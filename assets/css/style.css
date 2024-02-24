@@ -1,0 +1,407 @@
+h1, h2, h3, h4, h5, h6, p, span, ul, li, a, .btn-default, textarea {
+	margin: 0;
+	padding: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a:hover {
+	text-decoration: none;
+}
+a:focus {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+/* /////////////////////////////////////sinsssns//////////////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --success-color: limegreen;
+    --error-color: orangered;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.sign-in-form{
+    background-color: hsla(0, 0%, 50%, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-info {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    width: 498px;
+	/* align-items: center; */
+	margin: 0 auto;
+}
+
+h2 {
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    position: relative;
+    border: 0;
+}
+
+.form-control label {
+    color: gray;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: gray;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: -16px;
+    left: 16px;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: #3725f8;
+    border: 2px solid #3725f8;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button.home {
+    cursor: pointer;
+    background-color: lightgray;
+    border: 2px solid lightgray;
+    color: white;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: block;
+}
+
+
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+p.register-link {
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+input#password {
+    position: relative;
+}
+
+i#showPass {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+
+
+
+
+
+/* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhome//////////////// */
+
+section.login-sction {
+    padding: 51px 0 0 0;
+}
+
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search-bar input {
+    width: 360px;
+    padding: 5px 45px;
+    font-size: 16px;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar i {
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+
+.header-btn a {
+    /* color: #000; */
+    background: #1b6ef3;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #fff;
+}
+
+header {
+    background: aliceblue;
+    padding: 15px 0;
+}
+
+
+.blog-post {
+    display: flex;
+    align-items: center;
+    background: aliceblue;
+    padding: 40px 40px;
+    border-radius: 10px;
+    margin: 30px 0px;
+}
+
+.blog-image img {
+    width: 100%;
+}
+
+.blog-content h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.blog-content p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 17px 0;
+}
+
+.blog-author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-author h6 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 35px 0 0px;
+}
+
+.blog-head h1 {
+    font-size: 38px;
+    text-align: center;
+    font-weight: 500;
+    padding: 50px 0px;
+}
+
+.footer-logo h1 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 55px;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-links {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links ul li {
+    font-size: 27px;
+    padding: 10px 0;
+}
+
+.footer-links h3 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.copywrite {
+    background: aliceblue;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 0;
+}
+
+
+h1.creat-head {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.logo a {
+    font-size: 27px;
+    font-weight: 500;
+    color: #000;
+}
+
+
+.title-post input {width: 30%;padding: 6px 15px;border: 2px solid #000;border-radius: 10px;font-size: 15px;}
+
+.title-post {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.title-post label {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 47px;
+}
+
+.categories-post h6 {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.categories-post select {
+    width: 30%;
+    padding: 6px 11px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.upload-image {
+    padding: 29px 0;
+}
+
+.title-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-description label {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+
+
+.title-description textarea {
+    border: 2px solid #000;
+    background: #f9f9f9;
+}
+
+section.creact-post-sect {
+    padding: 10px 0 50px 0;
+}
+
+.blogbtn {
+    padding: 26px 0;
+}
+
+.blogbtn button {
+    margin: 0 15px 0 0px;
+    padding: 6px 15px;
+}
+
+.textarea{
+    width: 100%;
+    border: 1px solid rgb(132, 132, 132);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.form-control.error small {
+    visibility: visible;
+    padding: 7px 0;
+}

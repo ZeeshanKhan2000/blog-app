@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TITLE HERE</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+
+  
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header-main">
+            <div class="logo">
+              <a href="index.html">BlogHub</a>
+
+            </div>
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="search">
+            </div>
+            <div class="header-btn">
+              <!-- <a href="post.html">Write</a> -->
+              <a href="sign-in.html">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="creact-post-sect">
+    <div class="container">
+      <div class="row">
+        <div class="co-md-12">
+          <h1 class="creat-head">Create Blog Or Ask Question</h1>
+          <form action="">
+            <div class="form-control">
+              <label for="blog-title">Title</label>
+              <input type="text" id="blog-title" placeholder="Enter Title here">
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="categories">Category</label>
+              <select  class="form-select" id="categories" required>
+                <option value="default" disabled selected>Select Category</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+                <option value="react">React ja</option>
+              </select>
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="blog-image"> Image </label>
+              <input type="text" id="blog-image" placeholder="Enter Image Url here">
+              <small></small>
+            </div>
+            <div class="form-control">
+              <label for="blog-description">Description</label>
+              <textarea class="textarea" name="blog-description" id="blog-description" rows="6" placeholder="Enter Description here"></textarea>
+              <small></small>
+            </div>
+            <div class="blogbtn">
+              <button type="button" id="submit" class="btn btn-primary">Save</button>
+              <button type="button" onclick="clearPost()" class="btn btn-danger">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/font.js"></script>
+  <script src="./assets/js/post.js"></script>
+</body>
+
+</html>
